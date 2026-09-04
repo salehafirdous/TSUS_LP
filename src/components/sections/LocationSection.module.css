@@ -63,8 +63,21 @@
 
 .actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
+}
+
+.actions > * {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+  }
+  .actions > * {
+    width: auto;
+  }
 }
 
 .mapCol {
