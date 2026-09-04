@@ -1,0 +1,82 @@
+:root {
+  /* Brand Colors */
+  --color-primary-blue: #30428e;
+  --color-dark-blue: #09102c;
+  --color-dark-blue-light: #1d2851;
+  --color-gold: #ffcb42;
+  --color-gold-dark: #f3a81d;
+  
+  --color-text-main: #333333;
+  --color-text-muted: #666666;
+  --color-bg-light: #f8f9fa;
+  --color-white: #ffffff;
+  
+  /* Gradients */
+  --gradient-gold: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+  --gradient-blue: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-dark-blue-light) 100%);
+  
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Manrope', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-dark-blue);
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary-blue);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.py-section { padding: 3rem 0; }
+@media (min-width: 768px) {
+  .py-section { padding: 4.5rem 0; }
+}
