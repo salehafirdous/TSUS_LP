@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { HeroSection } from './components/sections/HeroSection';
-import { TrustStrip } from './components/sections/TrustStrip';
+import { StatsSection } from './components/sections/StatsSection';
 import { JourneySection } from './components/sections/JourneySection';
 import { GradeAgeSection } from './components/sections/GradeAgeSection';
 import { EarlyYearsSection } from './components/sections/EarlyYearsSection';
@@ -19,7 +19,7 @@ function App() {
     <div className="app">
       <Header />
       <HeroSection />
-      <TrustStrip />
+      <StatsSection />
       <JourneySection />
       <GradeAgeSection />
       <EarlyYearsSection />

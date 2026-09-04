@@ -6,7 +6,7 @@ import { MapPin } from 'lucide-react';
 export const LocationSection = () => {
   return (
     <section className={`py-section ${styles.section}`}>
-      <div className={`container ${styles.container}`}>
+      <div className={`containerWide ${styles.container}`}>
         <div className={styles.content}>
           <span className={styles.eyebrow}>CONVENIENTLY LOCATED</span>
           <h2 className={styles.headline}>A Nursery-to-Grade-10 CBSE School in Sarabha Nagar, Ludhiana</h2>
@@ -24,8 +24,8 @@ export const LocationSection = () => {
           </p>
           
           <div className={styles.actions}>
-            <Button variant="primary">GET DIRECTIONS</Button>
-            <Button variant="outline">BOOK A CAMPUS VISIT</Button>
+            <Button variant="primary" href="#lead-form">GET DIRECTIONS</Button>
+            <Button variant="secondary" href="#lead-form">BOOK A CAMPUS VISIT</Button>
           </div>
         </div>
         <div className={styles.mapCol}>

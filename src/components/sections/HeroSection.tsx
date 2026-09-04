@@ -21,8 +21,10 @@ export const HeroSection = () => {
 
   return (
     <section className={styles.hero}>
-      <div className={styles.backgroundOverlay}></div>
-      <div className={`container ${styles.container}`}>
+      <div className={styles.heroBg}></div>
+      <div className={styles.heroGradient}></div>
+
+      <div className={styles.heroContainer}>
 
         <div className={styles.content}>
           <span className={styles.eyebrow}>NURSERY · LKG · UKG ADMISSIONS 2027–28 | LUDHIANA</span>
@@ -52,12 +54,15 @@ export const HeroSection = () => {
           </div>
 
           <div className={styles.actions}>
-            <Button variant="primary">Book A Campus Visit</Button>
-            <Button variant="outline" className={styles.secondaryBtn}>Call Admissions</Button>
+            <Button variant="primary" href="#lead-form">Book A Campus Visit</Button>
+            <Button variant="outline" className={styles.secondaryBtn} href="#lead-form">Call Admissions</Button>
           </div>
         </div>
+        <div className={styles.centerImageWrapper}>
+          <img src="/nursery_child_uniform.png" alt="Preschool child learning in uniform" className={styles.centerImage} />
+        </div>
 
-        <div className={styles.formCardWrapper}>
+        <div className={styles.formCardWrapper} id="lead-form">
           <div className={styles.formCard}>
             <h3 className={styles.formTitle}>Book Your Campus Visit</h3>
             {status === 'success' ? (

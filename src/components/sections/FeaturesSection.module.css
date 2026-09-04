@@ -23,6 +23,16 @@
   flex-direction: column;
 }
 
+@media (max-width: 991px) {
+  .card {
+    align-items: center;
+    text-align: center;
+  }
+  .bulletList {
+    list-style-position: inside;
+  }
+}
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);

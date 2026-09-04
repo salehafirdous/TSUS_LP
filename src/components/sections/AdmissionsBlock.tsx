@@ -24,12 +24,12 @@ export const AdmissionsBlock = () => {
             </ul>
 
             <div className={styles.actions}>
-              <Button variant="primary">RESERVE MY SATURDAY SLOT</Button>
+              <Button variant="primary" href="#lead-form">RESERVE MY SATURDAY SLOT</Button>
             </div>
             <p className={styles.smallTextLight}>Limited family slots available.</p>
           </div>
-          <div className={styles.saturdayIcon}>
-            <Calendar size={120} strokeWidth={1} />
+          <div className={styles.saturdayImageCol}>
+            <img src="/images/binoculars_child.png" alt="Child experiencing school" className={styles.saturdayImage} />
           </div>
         </div>
 
@@ -48,7 +48,7 @@ export const AdmissionsBlock = () => {
               Visit TSUS Ludhiana, meet our Early Years team and understand the learning environment  and the full Nursery-to-Grade-10 journey your child is joining  before making your decision.
             </p>
 
-            <Button variant="primary">CHECK ADMISSION AVAILABILITY</Button>
+            <Button variant="primary" href="#lead-form">CHECK ADMISSION AVAILABILITY</Button>
           </div>
 
           <div className={styles.offerBox}>
@@ -59,7 +59,7 @@ export const AdmissionsBlock = () => {
               For eligible Pre-Primary admissions  Nursery · LKG · UKG
             </p>
             <div className="mt-4">
-              <Button variant="outline">CHECK ELIGIBILITY</Button>
+              <Button variant="outline" href="#lead-form">CHECK ELIGIBILITY</Button>
             </div>
             <p className={styles.smallText}>
               *Subject to applicable admission terms, grade availability and school approval.

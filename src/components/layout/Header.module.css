@@ -27,3 +27,9 @@
     display: block;
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    justify-content: center;
+  }
+}

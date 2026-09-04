@@ -19,6 +19,18 @@
   flex: 1;
 }
 
+@media (max-width: 991px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .questionsList {
+    text-align: left;
+  }
+}
+
 .imageCol {
   flex: 1;
   width: 100%;

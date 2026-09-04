@@ -20,7 +20,7 @@ export const JourneySection = () => {
 
   return (
     <section className={`py-section ${styles.journeySection}`}>
-      <div className={`container ${styles.container}`}>
+      <div className={`containerWide ${styles.container}`}>
         <div className={styles.imageCol}>
           <div className={styles.imageWrapper}>
             {images.map((src, idx) => (
@@ -52,7 +52,7 @@ export const JourneySection = () => {
             Early Years today. STEM labs, a Digital Literacy Lab, competitive sports, debate and design-thinking tomorrow  the same school, right through Class 10.
           </div>
 
-          <Button variant="primary">SEE THE FULL TSUS JOURNEY</Button>
+          <Button variant="primary" href="#lead-form">SEE THE FULL TSUS JOURNEY</Button>
         </div>
       </div>
     </section>

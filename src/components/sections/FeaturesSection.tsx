@@ -72,7 +72,7 @@ const features = [
 export const FeaturesSection = () => {
   return (
     <section className={`py-section ${styles.section}`}>
-      <div className="container">
+      <div className="containerWide">
         <div className={styles.grid}>
           {features.map((feat, idx) => (
             <div key={idx} className={styles.card}>
@@ -107,7 +107,7 @@ export const FeaturesSection = () => {
 
               {feat.cta && (
                 <div className={styles.cta}>
-                  <Button variant="outline">{feat.cta}</Button>
+                  <Button variant="outline" href="#lead-form">{feat.cta}</Button>
                 </div>
               )}
             </div>

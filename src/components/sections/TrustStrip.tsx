@@ -4,7 +4,7 @@ import styles from './TrustStrip.module.css';
 export const TrustStrip = () => {
   return (
     <section className={styles.trustStrip}>
-      <div className={`container ${styles.container}`}>
+      <div className={`containerWide ${styles.container}`}>
         <div className={styles.statItem}>
           <h2 className={styles.statNumber}>10+ YEARS</h2>
           <p className={styles.statLabel}>Educational Legacy</p>

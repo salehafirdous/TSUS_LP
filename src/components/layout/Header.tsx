@@ -14,7 +14,7 @@ export const Header = () => {
           />
         </a>
         <div className={styles.actions}>
-          <Button variant="primary">Enquire Now</Button>
+          <Button variant="primary" href="#lead-form">Enquire Now</Button>
         </div>
       </div>
     </header>

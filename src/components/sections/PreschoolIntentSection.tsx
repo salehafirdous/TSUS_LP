@@ -6,7 +6,10 @@ const images = [
   '/images/Nursery1.jpg',
   '/images/project.jpg',
   '/images/Student.jpg',
-  '/images/Lab.jpg'
+  '/images/Lab.jpg',
+  '/images/Image1.jpg',
+  '/images/Image2.jpg',
+  '/images/Image3.jpg'
 ];
 
 export const PreschoolIntentSection = () => {
@@ -21,7 +24,7 @@ export const PreschoolIntentSection = () => {
 
   return (
     <section className={`py-section ${styles.section}`}>
-      <div className={`container ${styles.container}`}>
+      <div className={`containerWide ${styles.container}`}>
         <div className={styles.content}>
           <span className={styles.eyebrow}>CHOOSING A SCHOOL IN LUDHIANA FOR YOUR 3-YEAR-OLD?</span>
           <h2 className={styles.headline}>Look Beyond ABCs and Numbers.</h2>
@@ -43,7 +46,7 @@ export const PreschoolIntentSection = () => {
           </p>
           
           <div className="mt-4">
-            <Button variant="primary">EXPERIENCE TSUS LUDHIANA</Button>
+            <Button variant="primary" href="#lead-form">EXPERIENCE TSUS LUDHIANA</Button>
           </div>
         </div>
         
