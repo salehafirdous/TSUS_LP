@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../ui/Button';
 import { Input } from '../ui/Input';
 import { Select } from '../ui/Select';
 import styles from './HeroSection.module.css';
+import { submitLead } from '../../utils/submitLead';
 
 export const HeroSection = () => {
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('loading');
+    const formData = new FormData(e.currentTarget);
+    await submitLead(
+      formData,
+      () => setStatus('success'),
+      () => setStatus('error')
+    );
+  };
+
   return (
     <section className={styles.hero}>
       <div className={styles.backgroundOverlay}></div>
@@ -46,54 +60,72 @@ export const HeroSection = () => {
         <div className={styles.formCardWrapper}>
           <div className={styles.formCard}>
             <h3 className={styles.formTitle}>Book Your Campus Visit</h3>
-            <form onSubmit={(e) => e.preventDefault()} className={styles.form}>
-              <Input placeholder="Enter your name" label="Parent Name" required />
-              <Input placeholder="+91" label="Mobile Number" type="tel" required />
-
-              <Select
-                label="Child's Age"
-                defaultValue=""
-                options={[
-                  { value: "2.5-3", label: "2.5–3 Years" },
-                  { value: "3-4", label: "3–4 Years" },
-                  { value: "4-5", label: "4–5 Years" },
-                  { value: "5-6", label: "5–6 Years" }
-                ]}
-                required
-              />
-
-              <Select
-                label="Grade Seeking Admission"
-                defaultValue=""
-                options={[
-                  { value: "pre-nursery", label: "Pre-Nursery" },
-                  { value: "nursery", label: "Nursery" },
-                  { value: "lkg", label: "LKG" },
-                  { value: "ukg", label: "UKG" }
-                ]}
-                required
-              />
-
-              <Input placeholder="Area / Locality" label="Area / Locality" required />
-
-              <Select
-                label="Preferred Interaction"
-                defaultValue=""
-                options={[
-                  { value: "campus-visit", label: "Campus Visit" },
-                  { value: "saturday-experience", label: "Saturday Experience" },
-                  { value: "online-counselling", label: "Online Counselling" }
-                ]}
-                required
-              />
-
-              <div className={styles.submitWrapper}>
-                <Button variant="primary" fullWidth type="submit">Book My Visit</Button>
+            {status === 'success' ? (
+              <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
+                <h4 style={{ color: 'var(--color-primary-blue)', marginBottom: '1rem', fontSize: '1.25rem' }}>Thank You!</h4>
+                <p>Your visit has been booked successfully. Our admissions team will contact you shortly.</p>
+                <Button variant="outline" style={{ marginTop: '1.5rem' }} onClick={() => setStatus('idle')}>Submit Another</Button>
               </div>
-              <p className={styles.smallText}>
-                Your details will only be shared with the TSUS Ludhiana admissions team.
-              </p>
-            </form>
+            ) : (
+              <form onSubmit={handleSubmit} className={styles.form}>
+                <Input name="name" placeholder="Enter your name" label="Parent Name" required />
+                <Input name="phone" placeholder="+91" label="Mobile Number" type="tel" required />
+
+                <Select
+                  name="childAge"
+                  label="Child's Age"
+                  defaultValue=""
+                  options={[
+                    { value: "2.5-3", label: "2.5–3 Years" },
+                    { value: "3-4", label: "3–4 Years" },
+                    { value: "4-5", label: "4–5 Years" },
+                    { value: "5-6", label: "5–6 Years" }
+                  ]}
+                  required
+                />
+
+                <Select
+                  name="grade"
+                  label="Grade Seeking Admission"
+                  defaultValue=""
+                  options={[
+                    { value: "pre-nursery", label: "Pre-Nursery" },
+                    { value: "nursery", label: "Nursery" },
+                    { value: "lkg", label: "LKG" },
+                    { value: "ukg", label: "UKG" }
+                  ]}
+                  required
+                />
+
+                <Input name="area" placeholder="Area / Locality" label="Area / Locality" required />
+
+                <Select
+                  name="interaction"
+                  label="Preferred Interaction"
+                  defaultValue=""
+                  options={[
+                    { value: "campus-visit", label: "Campus Visit" },
+                    { value: "saturday-experience", label: "Saturday Experience" },
+                    { value: "online-counselling", label: "Online Counselling" }
+                  ]}
+                  required
+                />
+
+                <div className={styles.submitWrapper}>
+                  <Button variant="primary" fullWidth type="submit" disabled={status === 'loading'}>
+                    {status === 'loading' ? 'Submitting...' : 'Book My Visit'}
+                  </Button>
+                </div>
+                {status === 'error' && (
+                  <p style={{ color: 'red', marginTop: '0.5rem', fontSize: '0.875rem', textAlign: 'center' }}>
+                    Something went wrong. Please try again.
+                  </p>
+                )}
+                <p className={styles.smallText}>
+                  Your details will only be shared with the TSUS Ludhiana admissions team.
+                </p>
+              </form>
+            )}
           </div>
         </div>
 
