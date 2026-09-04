@@ -27,7 +27,10 @@ export const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
-        <p>&copy; {new Date().getFullYear()} The Shri Ram Universal School, Ludhiana. All Rights Reserved.</p>
+        <div className={`container ${styles.copyrightContainer}`}>
+          <p>&copy; {new Date().getFullYear()} The Shri Ram Universal School, Ludhiana. All Rights Reserved.</p>
+          <p>Developed by RightBrain Infotech Pvt. Ltd.</p>
+        </div>
       </div>
     </footer>
   );

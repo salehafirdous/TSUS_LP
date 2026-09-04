@@ -60,7 +60,22 @@
 .copyright {
   background: var(--color-dark-blue-light);
   padding: 1.5rem 0;
-  text-align: center;
   font-size: 0.875rem;
   color: rgba(255,255,255,0.7);
+}
+
+.copyrightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .copyrightContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 }

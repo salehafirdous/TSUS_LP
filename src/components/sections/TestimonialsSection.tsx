@@ -59,11 +59,12 @@ export const TestimonialsSection = () => {
             ))}
           </div>
 
-          <div className={styles.videoHeader}>
-            <h3 className={styles.subHeadline}>Watch Their Experiences</h3>
-          </div>
+          <div className={styles.videoSection}>
+            <div className={styles.videoHeader}>
+              <h3 className={styles.subHeadline}>Watch Their Experiences</h3>
+            </div>
 
-          <div className={styles.videoGrid}>
+            <div className={styles.videoGrid}>
             {videos.map((vid, idx) => (
               <div key={idx} className={styles.videoCard}>
                 <iframe 
@@ -78,6 +79,7 @@ export const TestimonialsSection = () => {
                 ></iframe>
               </div>
             ))}
+          </div>
           </div>
         </div>
       </div>

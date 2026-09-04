@@ -14,7 +14,7 @@ export const submitLead = async (
   const description = `Child Age: ${childAge || 'N/A'}\nGrade Seeking Admission: ${grade || 'N/A'}\nArea/Locality: ${area || 'N/A'}\nPreferred Interaction: ${interaction || 'N/A'}`;
 
   const payload = {
-    name,
+    contact_name: name,
     phone,
     opportunity: "TSUS Ludhiana LP Lead",
     salesperson_id: 2,
