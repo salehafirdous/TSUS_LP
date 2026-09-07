@@ -31,6 +31,9 @@ function App() {
       <FAQSection />
       <FinalConversionSection />
       <Footer />
+      <div className="mobile-sticky-cta">
+        <a href="#lead-form">BOOK A CAMPUS VISIT</a>
+      </div>
     </div>
   )
 }

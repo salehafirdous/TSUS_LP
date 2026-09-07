@@ -133,6 +133,20 @@
   }
 }
 
+@media (max-width: 767px) {
+  .admissionsBox,
+  .offerBox {
+    padding: 2rem 1.25rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .chips {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
+
 .offerBox {
   border: 2px dashed var(--color-gold);
   text-align: center;

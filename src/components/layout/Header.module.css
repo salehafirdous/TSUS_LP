@@ -1,7 +1,7 @@
 .header {
   background: var(--color-white);
   padding: 1rem 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -16,6 +16,28 @@
 .logo {
   height: 60px;
   width: auto;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.taglineWrapper {
+  border-left: 2px solid var(--color-gold);
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.taglineText {
+  color: var(--color-dark-blue);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  max-width: 140px;
 }
 
 .actions {

@@ -33,6 +33,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .card {
+    padding: 2rem 1.25rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
