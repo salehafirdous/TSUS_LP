@@ -58,7 +58,7 @@ export const FAQSection = () => {
     <section className={`py-section ${styles.section}`}>
       <div className={`container ${styles.container}`}>
         <div className={styles.header}>
-          <h2 className={styles.headline}>Frequently Asked Questions About Nursery, LKG & UKG Admissions in Ludhiana</h2>
+          <h2 className={styles.headline}>Frequently Asked Questions About <span className="highlight">Nursery, LKG & UKG Admissions</span> in Ludhiana</h2>
         </div>
 
         <div className={styles.faqList}>

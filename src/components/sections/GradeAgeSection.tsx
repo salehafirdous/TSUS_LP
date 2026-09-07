@@ -43,7 +43,7 @@ export const GradeAgeSection = () => {
       <div className={styles.gradeContainer}>
         <div className={styles.header}>
           <span className={styles.eyebrow}>FIND THE RIGHT CLASS FOR YOUR CHILD</span>
-          <h2 className={styles.headline}>Early Years Admissions in Ludhiana  The First Steps of a Nursery-to-Grade-10 Journey</h2>
+          <h2 className={styles.headline}>Early Years Admissions in Ludhiana  The First Steps of a <span className="highlight">Nursery-to-Grade-10</span> Journey</h2>
         </div>
 
         <div className={styles.grid}>

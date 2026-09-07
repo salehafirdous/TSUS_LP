@@ -20,6 +20,12 @@
   --font-body: 'Manrope', sans-serif;
 }
 
+.highlight {
+  background: linear-gradient(180deg, transparent 55%, var(--color-gold) 55%);
+  padding: 0 0.15rem;
+  display: inline;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

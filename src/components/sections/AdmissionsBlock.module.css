@@ -24,6 +24,7 @@
 
 .saturdayImageCol {
   width: 100%;
+  height: 250px;
   margin-top: 2rem;
   border-radius: 16px;
   overflow: hidden;
@@ -59,7 +60,7 @@
 .eyebrowLight {
   display: block;
   color: var(--color-gold);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.875rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
@@ -122,6 +123,10 @@
 }
 
 @media (max-width: 991px) {
+  .saturdayBox {
+    flex-direction: column;
+    padding: 2.5rem;
+  }
   .admissionsBox {
     display: flex;
     flex-direction: column;
@@ -164,7 +169,7 @@
 .eyebrow {
   display: block;
   color: var(--color-primary-blue);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.875rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;

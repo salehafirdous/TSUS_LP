@@ -29,7 +29,7 @@ export const HeroSection = () => {
         <div className={styles.content}>
           <span className={styles.eyebrow}>NURSERY · LKG · UKG ADMISSIONS 2027–28 | LUDHIANA</span>
           <h1 className={styles.headline}>
-            Choosing Your Child’s First School in Ludhiana? Make It the Only One They’ll Ever Need.
+            Choosing Your <span className="highlight">Child’s First School</span> in Ludhiana? Make It the Only One They’ll Ever Need.
           </h1>
           <p className={styles.subline}>
             A dedicated Early Years program to begin with. A full Nursery-to-Grade-10 CBSE journey to grow into  on the same campus, with the same school family, from your child’s very first day.
@@ -37,11 +37,11 @@ export const HeroSection = () => {
 
           <div className={styles.chips}>
             <span>Pre-Nursery</span>
-            <span className={styles.dot}>·</span>
+            <span className={styles.dot}>•</span>
             <span>Nursery</span>
-            <span className={styles.dot}>·</span>
+            <span className={styles.dot}>•</span>
             <span>LKG</span>
-            <span className={styles.dot}>·</span>
+            <span className={styles.dot}>•</span>
             <span>UKG</span>
           </div>
 

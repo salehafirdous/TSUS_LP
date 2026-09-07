@@ -38,7 +38,7 @@ export const AdmissionsBlock = () => {
 
           <div className={styles.admissionsBox}>
             <span className={styles.eyebrow}>ADMISSIONS 2027-28</span>
-            <h3 className={styles.headline}>Nursery, LKG & UKG Admissions Open in Ludhiana</h3>
+            <h3 className={styles.headline}><span className="highlight">Nursery, LKG & UKG Admissions</span> Open in Ludhiana</h3>
 
             <div className={styles.chips}>
               Pre-Nursery (2.5–3 Yrs) · Nursery (3–4 Yrs) · LKG (4–5 Yrs) · UKG (5–6 Yrs)
@@ -54,7 +54,7 @@ export const AdmissionsBlock = () => {
           <div className={styles.offerBox}>
             <Tag size={48} className={styles.offerIcon} />
             <span className={styles.eyebrow}>CURRENT ADMISSION BENEFIT</span>
-            <h3 className={styles.headline}>25% Concession on the Admission Fee*</h3>
+            <h3 className={styles.headline}><span className="highlight">25% Concession</span> on the Admission Fee*</h3>
             <p className={styles.desc}>
               For eligible Pre-Primary admissions  Nursery · LKG · UKG
             </p>

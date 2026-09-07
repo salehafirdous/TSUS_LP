@@ -26,7 +26,7 @@ export const EarlyYearsSection = () => {
       <div className={`containerWide ${styles.container}`}>
         <div className={styles.header}>
           <span className={styles.eyebrow}>WHY THE EARLY YEARS MATTER</span>
-          <h2 className={styles.headline}>The First Five Years Shape So Much More.</h2>
+          <h2 className={styles.headline}>The <span className="highlight">First Five Years</span> Shape So Much More.</h2>
         </div>
 
         <div className={styles.tableWrapper}>

@@ -17,7 +17,10 @@
 
 .heroBg {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('https://images.unsplash.com/photo-1576085898323-218337e3e43c?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center;
@@ -28,7 +31,10 @@
 
 .heroGradient {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 80%);
   z-index: 1;
 }
@@ -76,7 +82,7 @@
 .eyebrow {
   display: inline-block;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   color: var(--color-primary-blue);
   margin-bottom: 1rem;
@@ -87,6 +93,7 @@
   color: var(--color-dark-blue);
   margin-bottom: 1.5rem;
 }
+
 
 .subline {
   font-size: 1.125rem;
@@ -107,11 +114,14 @@
   margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 0.875rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .dot {
   color: var(--color-gold);
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .bodyText {
@@ -140,7 +150,8 @@
     align-items: center;
     width: 100%;
   }
-  .actions > * {
+
+  .actions>* {
     width: 100%;
     max-width: 280px;
     padding: 1rem 1rem !important;
@@ -148,7 +159,7 @@
   }
 }
 
-.actions > * {
+.actions>* {
   width: 100%;
 }
 
@@ -156,7 +167,8 @@
   .actions {
     flex-direction: row;
   }
-  .actions > * {
+
+  .actions>* {
     width: auto;
   }
 }
@@ -165,6 +177,7 @@
   border-color: var(--color-dark-blue);
   color: var(--color-dark-blue);
 }
+
 .secondaryBtn:hover {
   background: var(--color-bg-light);
   border-color: var(--color-primary-blue);
@@ -172,29 +185,31 @@
 }
 
 .centerImageWrapper {
-  display: none;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 350px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.centerImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  mix-blend-mode: darken;
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 65%);
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 65%);
 }
 
 @media (min-width: 992px) {
   .centerImageWrapper {
-    display: block;
-    position: absolute;
-    bottom: 0;
     left: 60%;
-    transform: translateX(-50%);
     width: 750px;
     max-width: 50vw;
-    z-index: 1;
-    pointer-events: none;
-  }
-  
-  .centerImage {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    mix-blend-mode: darken;
-    mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 65%);
-    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 65%);
   }
 
   .formCardWrapper {
@@ -229,6 +244,8 @@
   color: var(--color-dark-blue);
   text-align: center;
   margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 1.75rem;
 }
 
 .submitWrapper {

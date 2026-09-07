@@ -9,7 +9,7 @@ export const LocationSection = () => {
       <div className={`containerWide ${styles.container}`}>
         <div className={styles.content}>
           <span className={styles.eyebrow}>CONVENIENTLY LOCATED</span>
-          <h2 className={styles.headline}>A Nursery-to-Grade-10 CBSE School in Sarabha Nagar, Ludhiana</h2>
+          <h2 className={styles.headline}>A Nursery-to-Grade-10 CBSE School in <span className="highlight">Sarabha Nagar, Ludhiana</span></h2>
           
           <div className={styles.addressBox}>
             <MapPin className={styles.icon} size={32} />

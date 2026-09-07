@@ -38,7 +38,7 @@ export const JourneySection = () => {
 
         <div className={styles.contentCol}>
           <span className={styles.eyebrow}>ONE SCHOOL. ONE JOURNEY.</span>
-          <h2 className={styles.headline}>Your Child Doesn’t Just Start Here. They Grow Up Here.</h2>
+          <h2 className={styles.headline}>Your Child Doesn’t Just Start Here. They <span className="highlight">Grow Up Here</span>.</h2>
 
           <p className={styles.bodyText}>
             Many parents choosing a preschool in Ludhiana are quietly already thinking about what comes after  will we need to find, apply to, and settle our child into a new school again in two years?

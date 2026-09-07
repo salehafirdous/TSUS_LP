@@ -18,7 +18,7 @@
 .eyebrow {
   display: block;
   color: var(--color-primary-blue);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.875rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
@@ -100,9 +100,9 @@
 
 .cardAge {
   font-weight: 700;
-  color: var(--color-text-muted);
+  color: var(--color-dark-blue);
   font-size: 0.875rem;
-  background: var(--color-bg-light);
+  background: var(--gradient-gold);
   padding: 0.25rem 0.75rem;
   border-radius: 50px;
 }
