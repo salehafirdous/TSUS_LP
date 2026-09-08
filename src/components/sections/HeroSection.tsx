@@ -45,9 +45,13 @@ export const HeroSection = () => {
             <span>UKG</span>
           </div>
 
-          <p className={styles.bodyText}>
+          <p className={`${styles.bodyText} ${styles.desktopOnlyText}`}>
             At The Shri Ram Universal School, Sarabha Nagar, Ludhiana, young children learn through curiosity, play, communication and meaningful experiences in a nurturing Early Years environment  designed as the first chapter of a CBSE education that carries through to Grade 10.
           </p>
+
+          <div className={styles.mobileOnlyImageWrapper}>
+            <img src="/nursery_child_uniform.png" alt="Preschool child learning in uniform" className={styles.centerImage} />
+          </div>
 
           <div className={styles.trustLine}>
             Happy Learning · Personal Attention · Experiential Learning

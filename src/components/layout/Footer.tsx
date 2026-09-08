@@ -17,8 +17,8 @@ export const Footer = () => {
         </div>
         <div className={styles.infoCol}>
           <div className={styles.contact}>
-            <p>Email: info@tsusludhiana.com</p>
-            <p>Phone: +91 98788-78825</p>
+            <p>Email:             </p>
+            <p>Phone:             </p>
           </div>
         </div>
       </div>

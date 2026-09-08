@@ -3,7 +3,22 @@ import { Button } from '../ui/Button';
 import styles from './FeaturesSection.module.css';
 import { Lightbulb, Users, MessageCircle, ShieldCheck, Award, Rocket } from 'lucide-react';
 
-const features = [
+interface FeatureItem {
+  icon: React.ReactNode;
+  image?: string;
+  imagePosition?: string;
+  eyebrow: string;
+  headline: string;
+  items?: { title: string; desc: string }[];
+  closing?: string;
+  desc?: string;
+  stats?: string;
+  list?: string[];
+  cta?: string;
+  brandLine?: string;
+}
+
+const features: FeatureItem[] = [
   {
     icon: <Lightbulb size={32} />,
     image: '/images/project.jpg',

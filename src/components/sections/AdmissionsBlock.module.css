@@ -147,11 +147,14 @@
   }
   
   .chipsContainer {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
+    width: 100%;
   }
   .chip {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem;
+    width: 100%;
   }
   .chipTitle {
     font-size: 0.85rem;

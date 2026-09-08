@@ -257,3 +257,24 @@
   text-align: center;
   margin: 0;
 }
+
+@media (max-width: 991px) {
+  .desktopOnlyText {
+    display: none;
+  }
+
+  .mobileOnlyImageWrapper {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobileOnlyImageWrapper {
+    display: none;
+  }
+}
