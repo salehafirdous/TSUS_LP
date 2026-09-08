@@ -26,7 +26,6 @@ export const AdmissionsBlock = () => {
             <div className={styles.actions}>
               <Button variant="primary" href="#lead-form">RESERVE MY SATURDAY SLOT</Button>
             </div>
-            <p className={styles.smallTextLight}>Limited family slots available.</p>
           </div>
           <div className={styles.saturdayImageCol}>
             <img src="/images/binoculars_child.png" alt="Child experiencing school" className={styles.saturdayImage} />
@@ -40,8 +39,23 @@ export const AdmissionsBlock = () => {
             <span className={styles.eyebrow}>ADMISSIONS 2027-28</span>
             <h3 className={styles.headline}><span className="highlight">Nursery, LKG & UKG Admissions</span> Open in Ludhiana</h3>
 
-            <div className={styles.chips}>
-              Pre-Nursery (2.5–3 Yrs) · Nursery (3–4 Yrs) · LKG (4–5 Yrs) · UKG (5–6 Yrs)
+            <div className={styles.chipsContainer}>
+              <div className={styles.chip}>
+                <span className={styles.chipTitle}>Pre-Nursery</span>
+                <span className={styles.chipAge}>(2.5–3 Yrs)</span>
+              </div>
+              <div className={styles.chip}>
+                <span className={styles.chipTitle}>Nursery</span>
+                <span className={styles.chipAge}>(3–4 Yrs)</span>
+              </div>
+              <div className={styles.chip}>
+                <span className={styles.chipTitle}>LKG</span>
+                <span className={styles.chipAge}>(4–5 Yrs)</span>
+              </div>
+              <div className={styles.chip}>
+                <span className={styles.chipTitle}>UKG</span>
+                <span className={styles.chipAge}>(5–6 Yrs)</span>
+              </div>
             </div>
 
             <p className={styles.desc}>

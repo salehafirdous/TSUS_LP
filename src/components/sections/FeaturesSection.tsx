@@ -6,7 +6,8 @@ import { Lightbulb, Users, MessageCircle, ShieldCheck, Award, Rocket } from 'luc
 const features = [
   {
     icon: <Lightbulb size={32} />,
-    image: '/images/feature_learning.png',
+    image: '/images/project.jpg',
+    imagePosition: 'center 40%',
     eyebrow: 'LEARNING THROUGH EXPERIENCE',
     headline: 'It Looks Like Play. We See Learning.',
     items: [
@@ -19,7 +20,8 @@ const features = [
   },
   {
     icon: <Users size={32} />,
-    image: '/images/feature_small_groups.png',
+    image: '/images/Nursery1.jpg',
+    imagePosition: 'center 40%',
     eyebrow: 'SMALLER LEARNING GROUPS',
     headline: 'At 3, Being Seen Matters.',
     desc: 'Every child learns, communicates and settles into school differently. A smaller learning environment gives teachers more opportunities to understand each little learner  and it’s a ratio we hold school-wide, not just in the Early Years.',
@@ -29,13 +31,12 @@ const features = [
       'Greater classroom participation',
       'Better understanding of each learner',
       'More opportunities to ask and express'
-    ],
-    cta: 'MEET OUR EARLY YEARS TEAM'
+    ]
   },
   {
     icon: <MessageCircle size={32} />,
-    image: '/images/feature_communication.png',
-    imagePosition: 'center 25%',
+    image: '/images/Confidence.jpg',
+    imagePosition: 'center 20%',
     eyebrow: 'CONFIDENT COMMUNICATION',
     headline: 'English Should Become a Way to Express  Not a Fear.',
     desc: 'Children get everyday opportunities to communicate through Stories, Conversations, Songs, Show & Tell and classroom participation. Because confidence with language grows through using it, not simply memorising it  a habit that carries straight into the Discover Hour and DEED programs your child will meet in the years ahead.',
@@ -43,7 +44,8 @@ const features = [
   },
   {
     icon: <ShieldCheck size={32} />,
-    image: '/images/feature_peace_of_mind.png',
+    image: '/images/NewImage.JPG',
+    imagePosition: 'center 20%',
     eyebrow: 'PEACE OF MIND FOR PARENTS',
     headline: 'The Reassurance Every Parent Looks for First.',
     list: [
@@ -51,12 +53,13 @@ const features = [
       'Personal Attention  Smaller groups support meaningful interaction.',
       'Early-Years Educators  Teachers, and a dedicated didi per section.',
       'Safe, Supervised Campus  A secure environment.'
-    ]
+    ],
+    cta: 'EXPLORE OUR SAFE CAMPUS'
   },
   {
     icon: <Award size={32} />,
-    image: '/images/feature_trust.png',
-    imagePosition: 'center 30%',
+    image: '/images/ParentsTrust.JPG',
+    imagePosition: 'center 50%',
     eyebrow: 'A NAME PARENTS TRUST',
     headline: 'Educating for Life. Every Child. Every Day.',
     desc: 'A trusted educational foundation combined with a future-focused approach to learning  carried through every stage, from a child’s first day in Nursery to the day they leave TSUS in Grade 10.',
@@ -65,13 +68,12 @@ const features = [
       'Curiosity  Learning to question.',
       'Pride in Heritage  Learning to understand and respect.',
       'Pursuit of Excellence  Learning to keep trying.'
-    ],
-    brandLine: 'The Shri Ram Universal School, Ludhiana The 21st Century Skills School'
+    ]
   },
   {
     icon: <Rocket size={32} />,
-    image: '/images/feature_journey_ahead_blue.png',
-    imagePosition: 'center 30%',
+    image: '/images/Graduation.JPG',
+    imagePosition: 'center 70%',
     eyebrow: 'THE JOURNEY AHEAD',
     headline: 'Future Skills Start With Strong Foundations.',
     desc: 'At age three or four, future-ready education begins with curiosity, communication, creativity, problem-solving and independence  the exact habits your child builds in TSUS’s Early Years classrooms. As children progress through TSUS, this foundation grows into grade-appropriate future skills: AI and Robotics, a Digital Literacy Lab, real-world design thinking, and more.'

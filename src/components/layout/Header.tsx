@@ -9,7 +9,7 @@ export const Header = () => {
         <div className={styles.logoWrapper}>
           <a href="/" className={styles.logoLink}>
             <img
-              src="/images/Logo.png"
+              src="/images/header-logo.png"
               alt="TSUS Ludhiana Logo"
               className={styles.logo}
             />

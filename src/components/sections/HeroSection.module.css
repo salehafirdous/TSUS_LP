@@ -185,16 +185,7 @@
 }
 
 .centerImageWrapper {
-  display: block;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 350px;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.8;
+  display: none;
 }
 
 .centerImage {
@@ -208,9 +199,15 @@
 
 @media (min-width: 992px) {
   .centerImageWrapper {
+    display: block;
+    position: absolute;
+    bottom: 0;
     left: 60%;
+    transform: translateX(-50%);
     width: 750px;
     max-width: 50vw;
+    z-index: 1;
+    pointer-events: none;
   }
 
   .formCardWrapper {

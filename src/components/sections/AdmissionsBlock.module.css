@@ -133,8 +133,8 @@
     align-items: center;
     text-align: center;
   }
-  .chips {
-    text-align: center;
+  .chipsContainer {
+    justify-content: center;
   }
 }
 
@@ -146,9 +146,18 @@
     margin: 0 auto;
   }
   
-  .chips {
-    font-size: 0.9rem;
-    padding: 0.75rem;
+  .chipsContainer {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .chip {
+    padding: 0.5rem 0.75rem;
+  }
+  .chipTitle {
+    font-size: 0.85rem;
+  }
+  .chipAge {
+    font-size: 0.75rem;
   }
 }
 
@@ -180,14 +189,33 @@
   margin-bottom: 1.5rem;
 }
 
-.chips {
-  font-weight: 700;
-  color: var(--color-dark-blue);
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chip {
   background: var(--color-bg-light);
-  padding: 1rem;
+  border: 1px solid rgba(0,0,0,0.05);
   border-radius: 8px;
-  margin-bottom: 1.5rem;
-  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.chipTitle {
+  font-weight: 800;
+  color: var(--color-dark-blue);
+}
+
+.chipAge {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
 }
 
 .desc {
