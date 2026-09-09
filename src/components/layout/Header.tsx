@@ -9,14 +9,14 @@ export const Header = () => {
         <div className={styles.logoWrapper}>
           <a href="/" className={styles.logoLink}>
             <img
-              src="/images/header-logo.png"
+              src="/images/TSUS_Logo.png"
               alt="TSUS Ludhiana Logo"
               className={styles.logo}
             />
           </a>
         </div>
         <div className={styles.actions}>
-          <Button variant="primary" href="#lead-form">Enquire Now</Button>
+          <Button variant="primary" href="#lead-form" className={styles.headerBtn}>Enquire Now</Button>
         </div>
       </div>
     </header>

@@ -232,3 +232,23 @@
   color: var(--color-text-muted);
   margin-top: 1.5rem;
 }
+
+@media (max-width: 991px) {
+  .saturdayBox {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .saturdayContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .listLight {
+    display: inline-block;
+    text-align: left;
+  }
+}

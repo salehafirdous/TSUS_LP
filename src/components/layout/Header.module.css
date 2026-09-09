@@ -14,8 +14,9 @@
 }
 
 .logo {
-  height: 80px;
+  height: 170px;
   width: auto;
+  margin: -45px 0;
 }
 
 .logoWrapper {
@@ -54,4 +55,9 @@
   .container {
     justify-content: center;
   }
+}
+
+.headerBtn {
+  padding: 0.8rem 1.8rem !important;
+  font-size: 0.9rem !important;
 }

@@ -13,6 +13,7 @@ import { TestimonialsSection } from './components/sections/TestimonialsSection';
 import { AdmissionsBlock } from './components/sections/AdmissionsBlock';
 import { FAQSection } from './components/sections/FAQSection';
 import { FinalConversionSection } from './components/sections/FinalConversionSection';
+import { WhatsAppButton } from './components/ui/WhatsAppButton';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <div className="mobile-sticky-cta">
         <a href="#lead-form">BOOK A CAMPUS VISIT</a>
       </div>
+      <WhatsAppButton />
     </div>
   )
 }

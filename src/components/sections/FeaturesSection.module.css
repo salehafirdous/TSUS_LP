@@ -41,6 +41,7 @@
     align-items: center;
     text-align: center;
   }
+
   .bulletList {
     list-style-position: inside;
   }
@@ -52,6 +53,7 @@
     width: 100%;
     margin: 0 auto;
   }
+
   .cardImageWrapper {
     margin: -2rem -1.25rem 2rem -1.25rem;
   }
@@ -59,7 +61,7 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 .iconWrapper {
@@ -72,7 +74,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .eyebrow {
@@ -154,4 +156,24 @@
 .cta {
   margin-top: auto;
   padding-top: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .bulletList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    text-align: left;
+    list-style-position: outside;
+    padding-left: 1.5rem;
+  }
+
+  .stats {
+    white-space: nowrap;
+    font-size: clamp(0.6rem, 3.5vw, 0.9rem);
+    padding: 0.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

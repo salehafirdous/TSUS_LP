@@ -7,21 +7,26 @@ export const Footer = () => {
       <div className={`container ${styles.container}`}>
         <div className={styles.logoCol}>
           <img
-            src="/images/FooterLogo.png"
+            src="/images/TSUS_Logo.png"
             alt="TSUS Footer Logo"
             className={styles.logo}
           />
-          <p className={styles.tagline}>
-            The 21st Century Skills School
-          </p>
         </div>
-        <div className={styles.infoCol}>
-          <div className={styles.contact}>
-            <p>Email:             </p>
-            <p>Phone:             </p>
+        
+        <div className={styles.addressCol}>
+          <div className={styles.mapContainer}>
+            <iframe 
+              src="https://maps.google.com/maps?q=The+Shri+Ram+Universal+School,+Sarabha+Nagar,+Ludhiana&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="200" 
+              style={{ border: 0, borderRadius: '8px' }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="TSUS Ludhiana Map"
+            ></iframe>
           </div>
-        </div>
-      </div>
+        </div>      </div>
       <div className={styles.copyright}>
         <div className={`container ${styles.copyrightContainer}`}>
           <p>&copy; {new Date().getFullYear()} The Shri Ram Universal School, Ludhiana. All Rights Reserved.</p>

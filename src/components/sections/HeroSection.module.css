@@ -246,6 +246,13 @@
   font-size: 1.75rem;
 }
 
+@media (max-width: 480px) {
+  .formTitle {
+    font-size: clamp(1.1rem, 6.5vw, 1.5rem);
+    white-space: nowrap;
+  }
+}
+
 .submitWrapper {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
