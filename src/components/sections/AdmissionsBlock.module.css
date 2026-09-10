@@ -50,10 +50,10 @@
     border-radius: 0;
     flex-shrink: 0;
   }
-  
+
   .saturdayImage {
-    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%);
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
   }
 }
 
@@ -127,38 +127,44 @@
     flex-direction: column;
     padding: 2.5rem;
   }
+
   .admissionsBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .chipsContainer {
     justify-content: center;
   }
 }
 
 @media (max-width: 767px) {
+
   .admissionsBox,
   .offerBox {
     padding: 2rem 1.25rem;
     width: 100%;
     margin: 0 auto;
   }
-  
+
   .chipsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     width: 100%;
   }
+
   .chip {
     padding: 0.5rem;
     width: 100%;
   }
+
   .chipTitle {
     font-size: 0.85rem;
   }
+
   .chipAge {
     font-size: 0.75rem;
   }
@@ -201,7 +207,7 @@
 
 .chip {
   background: var(--color-bg-light);
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   padding: 0.75rem 1.25rem;
   display: flex;
@@ -239,14 +245,14 @@
     padding: 2rem;
     text-align: center;
   }
-  
+
   .saturdayContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
+
   .listLight {
     display: inline-block;
     text-align: left;

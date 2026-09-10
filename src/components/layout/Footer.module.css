@@ -31,15 +31,77 @@
 }
 
 .logo {
-  height: 200px;
+  height: 240px;
   width: auto;
-  margin-bottom: 0.5rem;
+  margin: -20px 0 calc(0.5rem - 20px) 0;
 }
 
 .tagline {
   color: var(--color-gold);
   font-weight: 700;
   font-size: 1.125rem;
+}
+
+.middleCol {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .middleCol {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  color: var(--color-primary-blue);
+  background: var(--color-bg-light);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.socialLink:hover {
+  background: var(--color-primary-blue);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.contactInfo h4 {
+  color: var(--color-gold-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.contactInfo p {
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.schoolLink {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.schoolLink:hover {
+  color: var(--color-gold-dark);
 }
 
 .infoCol {

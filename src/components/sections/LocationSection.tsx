@@ -15,7 +15,8 @@ export const LocationSection = () => {
             <MapPin className={styles.icon} size={32} />
             <div>
               <strong>The Shri Ram Universal School</strong><br />
-              Block-D, Sarabha Nagar, Ludhiana – 141001
+              Block-D, Sarabha Nagar, Ludhiana – 141001<br />
+              <a href="tel:+919172098206" style={{ color: 'var(--color-primary-blue)', fontWeight: 600, textDecoration: 'none', display: 'inline-block', marginTop: '0.25rem' }}>+91 91720 98206</a>
             </div>
           </div>
           

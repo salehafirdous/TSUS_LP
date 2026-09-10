@@ -21,8 +21,8 @@ interface FeatureItem {
 const features: FeatureItem[] = [
   {
     icon: <Lightbulb size={32} />,
-    image: '/images/project.jpg',
-    imagePosition: 'center 40%',
+    image: '/images/BlockPlay.JPG',
+    imagePosition: 'center 60%',
     eyebrow: 'LEARNING THROUGH EXPERIENCE',
     headline: 'It Looks Like Play. We See Learning.',
     items: [

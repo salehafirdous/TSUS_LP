@@ -50,7 +50,7 @@ export const HeroSection = () => {
           </p>
 
           <div className={styles.mobileOnlyImageWrapper}>
-            <img src="/nursery_child_uniform.png" alt="Preschool child learning in uniform" className={styles.centerImage} />
+            <img src="/images/HeroBackground.JPG" alt="Preschool child learning in uniform" className={styles.centerImage} />
           </div>
 
           <div className={styles.trustLine}>
@@ -63,7 +63,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className={styles.centerImageWrapper}>
-          <img src="/nursery_child_uniform.png" alt="Preschool child learning in uniform" className={styles.centerImage} />
+          <img src="/images/HeroBackground.JPG" alt="Preschool child learning in uniform" className={styles.centerImage} />
         </div>
 
         <div className={styles.formCardWrapper} id="lead-form">

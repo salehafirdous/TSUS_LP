@@ -3,7 +3,7 @@ import styles from './WhatsAppButton.module.css';
 
 export const WhatsAppButton = () => {
   return (
-    <a href="#" className={styles.whatsappButton} aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/919172098206" target="_blank" rel="noopener noreferrer" className={styles.whatsappButton} aria-label="Chat on WhatsApp">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

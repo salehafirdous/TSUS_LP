@@ -12,7 +12,7 @@ export const AdmissionsBlock = () => {
         <div className={styles.saturdayBox}>
           <div className={styles.saturdayContent}>
             <span className={styles.eyebrowLight}>WEEKEND SPECIAL</span>
-            <h2 className={styles.headlineLight}>Don’t Just Visit a School. Let Your Child Experience It.</h2>
+            <h2 className={styles.headlineLight}>Don’t Just Visit a School.<br /> Let Your Child Experience It.</h2>
             <h4 className={styles.subheadLight}>Saturday Experience at TSUS Ludhiana</h4>
 
             <p className={styles.descLight}>Let your child Explore, Create, Play and Discover, while you:</p>
@@ -28,7 +28,7 @@ export const AdmissionsBlock = () => {
             </div>
           </div>
           <div className={styles.saturdayImageCol}>
-            <img src="/images/binoculars_child.png" alt="Child experiencing school" className={styles.saturdayImage} />
+            <img src="/images/WeekendSpecial.png" alt="Child experiencing school" className={styles.saturdayImage} />
           </div>
         </div>
 
