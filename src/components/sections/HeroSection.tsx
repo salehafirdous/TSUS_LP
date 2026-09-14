@@ -36,13 +36,7 @@ export const HeroSection = () => {
           </p>
 
           <div className={styles.chips}>
-            <span>Pre-Nursery</span>
-            <span className={styles.dot}>•</span>
-            <span>Nursery</span>
-            <span className={styles.dot}>•</span>
-            <span>LKG</span>
-            <span className={styles.dot}>•</span>
-            <span>UKG</span>
+            <span className="highlight">Pre-Nursery -to-Grade-10 CBSE</span>
           </div>
 
           <p className={`${styles.bodyText} ${styles.desktopOnlyText}`}>
@@ -50,7 +44,7 @@ export const HeroSection = () => {
           </p>
 
           <div className={styles.mobileOnlyImageWrapper}>
-            <img src="/images/HeroBackground.JPG" alt="Preschool child learning in uniform" className={styles.centerImage} />
+            <img src="/images/HeroBG.JPG" alt="Preschool child learning in uniform" className={styles.centerImage} />
           </div>
 
           <div className={styles.trustLine}>
@@ -63,7 +57,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className={styles.centerImageWrapper}>
-          <img src="/images/HeroBackground.JPG" alt="Preschool child learning in uniform" className={styles.centerImage} />
+          <img src="/images/HeroBG.JPG" alt="Preschool child learning in uniform" className={styles.centerImage} />
         </div>
 
         <div className={styles.formCardWrapper} id="lead-form">

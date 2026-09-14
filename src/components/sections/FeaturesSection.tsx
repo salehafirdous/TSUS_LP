@@ -35,8 +35,7 @@ const features: FeatureItem[] = [
   },
   {
     icon: <Users size={32} />,
-    image: '/images/Nursery1.jpg',
-    imagePosition: 'center 40%',
+    image: '/images/1:10.JPG',
     eyebrow: 'SMALLER LEARNING GROUPS',
     headline: 'At 3, Being Seen Matters.',
     desc: 'Every child learns, communicates and settles into school differently. A smaller learning environment gives teachers more opportunities to understand each little learner  and it’s a ratio we hold school-wide, not just in the Early Years.',

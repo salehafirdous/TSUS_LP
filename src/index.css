@@ -105,34 +105,71 @@ img {
   }
 
   .mobile-sticky-cta {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
     background-color: var(--color-white);
-    padding: 10px 15px;
+    padding: 12px 16px;
     box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  }
+
+  .mobile-sticky-cta-split {
+    display: flex;
+    gap: 12px;
+    width: 100%;
   }
   
   .mobile-sticky-cta a {
-    display: block;
-    width: 100%;
-    background: var(--gradient-gold);
-    color: var(--color-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 14px;
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
     transition: transform 0.2s ease;
+  }
+
+  .mobile-sticky-cta .cta-main {
+    width: 100%;
+    background: var(--gradient-gold);
+    color: var(--color-dark-blue);
+    text-transform: none; /* In screenshot it is Sentence case but original was upper */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .mobile-sticky-cta-split a {
+    flex: 1;
+  }
+
+  .mobile-sticky-cta .cta-call {
+    background: var(--color-white);
+    color: var(--color-dark-blue);
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  }
+
+  .mobile-sticky-cta .cta-book {
+    background: var(--color-gold);
+    color: var(--color-dark-blue);
+    border: 1px solid transparent;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   
   .mobile-sticky-cta a:active {
     transform: scale(0.98);
+  }
+
+  /* Scale down Tawk.to widget to 50x50 on mobile to match WhatsApp */
+  iframe[title="chat widget"] {
+    transform: scale(0.8333) !important;
+    transform-origin: bottom right !important;
   }
 }

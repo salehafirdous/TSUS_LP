@@ -33,7 +33,11 @@ function App() {
       <FinalConversionSection />
       <Footer />
       <div className="mobile-sticky-cta">
-        <a href="#lead-form">BOOK A CAMPUS VISIT</a>
+        <a href="#lead-form" className="cta-main">BOOK A CAMPUS VISIT</a>
+        <div className="mobile-sticky-cta-split">
+          <a href="tel:+919172098206" className="cta-call">Call</a>
+          <a href="#lead-form" className="cta-book">Book a visit</a>
+        </div>
       </div>
       <WhatsAppButton />
     </div>

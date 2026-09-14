@@ -6,8 +6,7 @@ const grades = [
   {
     title: 'Pre-Nursery',
     age: '2.5–3 Years',
-    image: '/images/pre_nursery_uniform.png',
-    imagePosition: 'center 15%',
+    image: '/images/SensoryPlay.JPG',
     focus: 'Settling In · Sensory Play · First Friendships',
     desc: 'A gentle introduction to school where children begin feeling comfortable, exploring through their senses and interacting with other little learners.',
     linkText: 'Check Pre-Nursery'
@@ -15,7 +14,7 @@ const grades = [
   {
     title: 'Nursery',
     age: '3–4 Years',
-    image: '/images/nursery_uniform.png',
+    image: '/images/MotorSkill.jpeg',
     focus: 'Language · Motor Skills · Early Routines',
     desc: 'An engaging early-learning environment designed to encourage communication, movement, independence and positive school routines.',
     linkText: 'Check Nursery'
@@ -23,8 +22,7 @@ const grades = [
   {
     title: 'LKG',
     age: '4–5 Years',
-    image: '/images/lkg_uniform.png',
-    imagePosition: 'center 15%',
+    image: '/images/SelfLearning.JPG',
     focus: 'Pre-Reading · Numbers · Self-Expression',
     desc: 'Children begin strengthening language, early numeracy and the confidence to express their thoughts and ideas.',
     linkText: 'Check LKG'
@@ -32,8 +30,7 @@ const grades = [
   {
     title: 'UKG',
     age: '5–6 Years',
-    image: '/images/ukg_uniform.png',
-    imagePosition: 'center 15%',
+    image: '/images/Reading.JPG',
     focus: 'Reading Fluency · Grade 1 Readiness',
     desc: 'A transition year designed to strengthen foundational skills and help children move confidently towards Grade 1  and everything TSUS builds from there through Grade 10.',
     linkText: 'Check UKG'
