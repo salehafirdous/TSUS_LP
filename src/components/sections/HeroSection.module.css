@@ -93,7 +93,7 @@
 
 .subline {
   font-size: 1.125rem;
-  opacity: 0.9;
+  opacity: 0.95;
   color: var(--color-text-main);
   margin-bottom: 1.5rem;
 }
@@ -114,7 +114,7 @@
 
 .bodyText {
   font-size: 1rem;
-  opacity: 0.85;
+  opacity: 0.92;
   color: var(--color-text-main);
   margin-bottom: 1.5rem;
   line-height: 1.7;

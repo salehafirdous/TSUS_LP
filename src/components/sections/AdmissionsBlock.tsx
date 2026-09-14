@@ -65,19 +65,8 @@ export const AdmissionsBlock = () => {
             <Button variant="primary" href="#lead-form">CHECK ADMISSION AVAILABILITY</Button>
           </div>
 
-          <div className={styles.offerBox}>
-            <Tag size={48} className={styles.offerIcon} />
-            <span className={styles.eyebrow}>CURRENT ADMISSION BENEFIT</span>
-            <h3 className={styles.headline}><span className="highlight">25% Concession</span> on the Admission Fee*</h3>
-            <p className={styles.desc}>
-              For eligible Pre-Primary admissions  Nursery · LKG · UKG
-            </p>
-            <div className="mt-4">
-              <Button variant="outline" href="#lead-form">CHECK ELIGIBILITY</Button>
-            </div>
-            <p className={styles.smallText}>
-              *Subject to applicable admission terms, grade availability and school approval.
-            </p>
+          <div className={styles.imageBox}>
+            <img src="/images/TeacherStu.JPG" alt="Teacher and student learning" className={styles.fillImage} />
           </div>
 
         </div>

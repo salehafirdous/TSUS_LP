@@ -115,11 +115,28 @@
 }
 
 .admissionsBox,
-.offerBox {
+.imageBox {
   background: var(--color-white);
   border-radius: 12px;
-  padding: 3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.admissionsBox {
+  padding: 3rem;
+}
+
+.imageBox {
+  display: flex;
+  border: 2px dashed var(--color-gold);
+}
+
+.fillImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
 }
 
 @media (max-width: 991px) {
