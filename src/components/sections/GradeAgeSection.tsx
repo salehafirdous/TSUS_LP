@@ -50,7 +50,7 @@ export const GradeAgeSection = () => {
           {grades.map((grade, idx) => (
             <div key={idx} className={styles.card}>
               <div className={styles.cardImageWrapper}>
-                <img src={grade.image} alt={grade.title} className={styles.cardImage} style={{ objectPosition: grade.imagePosition || 'center' }} />
+                <img src={grade.image} alt={grade.title} className={styles.cardImage} />
               </div>
               <div className={styles.cardContent}>
                 <div className={styles.cardHeader}>
