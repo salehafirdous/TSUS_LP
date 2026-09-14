@@ -98,7 +98,9 @@ export const HeroSection = () => {
                     { value: "pre-nursery", label: "Pre-Nursery" },
                     { value: "nursery", label: "Nursery" },
                     { value: "lkg", label: "LKG" },
-                    { value: "ukg", label: "UKG" }
+                    { value: "ukg", label: "UKG" },
+                    { value: "grade 1-5", label: "Grade 1-5" },
+                    { value: "grade 6-10", label: "Grade 6-10" }
                   ]}
                   required
                 />

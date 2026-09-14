@@ -130,6 +130,12 @@
   line-height: 1.7;
 }
 
+@media (min-width: 992px) {
+  .bodyText {
+    max-width: 440px; /* Forces text to wrap before it hits the image */
+  }
+}
+
 .trustLine {
   font-weight: 700;
   color: var(--color-primary-blue);
