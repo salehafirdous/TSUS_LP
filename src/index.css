@@ -156,9 +156,9 @@ img {
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
   }
 
-  .mobile-sticky-cta .cta-book {
-    background: var(--color-gold);
-    color: var(--color-dark-blue);
+  .mobile-sticky-cta .cta-whatsapp {
+    background: #25D366;
+    color: var(--color-white);
     border: 1px solid transparent;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }

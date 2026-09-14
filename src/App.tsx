@@ -35,8 +35,8 @@ function App() {
       <div className="mobile-sticky-cta">
         <a href="#lead-form" className="cta-main">BOOK A CAMPUS VISIT</a>
         <div className="mobile-sticky-cta-split">
-          <a href="tel:+919172098206" className="cta-call">Call</a>
-          <a href="#lead-form" className="cta-book">Book a visit</a>
+          <a href="tel:+919172098206" className="cta-call">Call Now</a>
+          <a href="https://wa.me/919172098206" className="cta-whatsapp">WhatsApp Now</a>
         </div>
       </div>
       <WhatsAppButton />

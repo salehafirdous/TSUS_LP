@@ -14,7 +14,7 @@ const grades = [
   {
     title: 'Nursery',
     age: '3–4 Years',
-    image: '/images/MotorSkill.jpeg',
+    image: '/images/HeroBG.JPG',
     focus: 'Language · Motor Skills · Early Routines',
     desc: 'An engaging early-learning environment designed to encourage communication, movement, independence and positive school routines.',
     linkText: 'Check Nursery'

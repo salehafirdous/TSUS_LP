@@ -27,7 +27,10 @@ export const HeroSection = () => {
       <div className={styles.heroContainer}>
 
         <div className={styles.content}>
-          <span className={styles.eyebrow}>NURSERY · LKG · UKG ADMISSIONS 2027–28 | LUDHIANA</span>
+          <div className={styles.pillBadge}>
+            <span className={styles.pillDot}>•</span>
+            Admissions 2027–28 · Nursery to Grade 10
+          </div>
           <h1 className={styles.headline}>
             Choosing Your <span className="highlight">Child’s First School</span> in Ludhiana? Make It the Only One They’ll Ever Need.
           </h1>
