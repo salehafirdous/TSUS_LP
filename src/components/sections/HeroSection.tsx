@@ -14,7 +14,9 @@ export const HeroSection = () => {
     const formData = new FormData(e.currentTarget);
     await submitLead(
       formData,
-      () => setStatus('success'),
+      () => {
+        window.location.href = '/thank-you';
+      },
       () => setStatus('error')
     );
   };
@@ -56,7 +58,7 @@ export const HeroSection = () => {
 
           <div className={styles.actions}>
             <Button variant="primary" href="#lead-form">Book A Campus Visit</Button>
-            <Button variant="outline" className={styles.secondaryBtn} href="#lead-form">Call Admissions</Button>
+            <Button variant="outline" className={styles.secondaryBtn} href="tel:+919172098206">Call Admissions</Button>
           </div>
         </div>
         <div className={styles.centerImageWrapper}>
@@ -66,11 +68,9 @@ export const HeroSection = () => {
         <div className={styles.formCardWrapper} id="lead-form">
           <div className={styles.formCard}>
             <h3 className={styles.formTitle}>Book Your Campus Visit</h3>
-            {status === 'success' ? (
+            {status === 'loading' ? (
               <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
-                <h4 style={{ color: 'var(--color-primary-blue)', marginBottom: '1rem', fontSize: '1.25rem' }}>Thank You!</h4>
-                <p>Your visit has been booked successfully. Our admissions team will contact you shortly.</p>
-                <Button variant="outline" style={{ marginTop: '1.5rem' }} onClick={() => setStatus('idle')}>Submit Another</Button>
+                <p>Submitting your request...</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className={styles.form}>
@@ -120,8 +120,8 @@ export const HeroSection = () => {
                 />
 
                 <div className={styles.submitWrapper}>
-                  <Button variant="primary" fullWidth type="submit" disabled={status === 'loading'}>
-                    {status === 'loading' ? 'Submitting...' : 'Book My Visit'}
+                  <Button variant="primary" fullWidth type="submit">
+                    Book My Visit
                   </Button>
                 </div>
                 {status === 'error' && (

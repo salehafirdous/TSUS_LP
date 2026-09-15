@@ -15,6 +15,7 @@ export const submitLead = async (
 
   const payload = {
     name,
+    contact_name: name,
     phone,
     opportunity: "TSUS Ludhiana LP Lead",
     salesperson_id: 117,

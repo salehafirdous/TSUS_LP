@@ -14,8 +14,13 @@ import { AdmissionsBlock } from './components/sections/AdmissionsBlock';
 import { FAQSection } from './components/sections/FAQSection';
 import { FinalConversionSection } from './components/sections/FinalConversionSection';
 import { WhatsAppButton } from './components/ui/WhatsAppButton';
+import { ThankYouPage } from './pages/ThankYouPage';
 
 function App() {
+  if (window.location.pathname === '/thank-you') {
+    return <ThankYouPage />;
+  }
+
   return (
     <div className="app">
       <Header />
@@ -33,10 +38,9 @@ function App() {
       <FinalConversionSection />
       <Footer />
       <div className="mobile-sticky-cta">
-        <a href="#lead-form" className="cta-main">BOOK A CAMPUS VISIT</a>
         <div className="mobile-sticky-cta-split">
           <a href="tel:+919172098206" className="cta-call">Call Now</a>
-          <a href="https://wa.me/919172098206" className="cta-whatsapp">WhatsApp Now</a>
+          <a href="#lead-form" className="cta-book">Book a Visit</a>
         </div>
       </div>
       <WhatsAppButton />

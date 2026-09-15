@@ -156,9 +156,9 @@ img {
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
   }
 
-  .mobile-sticky-cta .cta-whatsapp {
-    background: #25D366;
-    color: var(--color-white);
+  .mobile-sticky-cta .cta-book {
+    background: var(--gradient-gold);
+    color: var(--color-dark-blue);
     border: 1px solid transparent;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
@@ -167,9 +167,5 @@ img {
     transform: scale(0.98);
   }
 
-  /* Scale down Tawk.to widget to 50x50 on mobile to match WhatsApp */
-  iframe[title="chat widget"] {
-    transform: scale(0.8333) !important;
-    transform-origin: bottom right !important;
-  }
+
 }
