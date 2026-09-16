@@ -1,6 +1,7 @@
 .section {
   background: var(--color-white);
   overflow: hidden;
+  padding-top: 1rem !important;
 }
 
 .header {

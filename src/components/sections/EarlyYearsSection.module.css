@@ -1,5 +1,6 @@
 .section {
   background: var(--color-white);
+  padding-top: 1rem !important;
 }
 
 .header {
