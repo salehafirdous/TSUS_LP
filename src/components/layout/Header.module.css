@@ -1,6 +1,6 @@
 .header {
   background: var(--color-white);
-  padding: 1rem 0;
+  padding: 0.5rem 0 0 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -14,10 +14,12 @@
 }
 
 .logo {
-  height: 75px;
+  height: 110px;
   width: auto;
-  margin: 0;
-  transform: translateX(-2rem);
+  margin: 0 0 -0.5rem 0;
+  transform: translate(-2rem, -0.5rem);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .logoWrapper {

@@ -31,10 +31,12 @@
 }
 
 .logo {
-  height: 70px;
+  height: 100px;
   width: auto;
   margin-bottom: 1rem;
-  transform: translate(-3rem, 5rem);
+  transform: translate(-3rem, 4rem);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 @media (max-width: 767px) {

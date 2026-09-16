@@ -25,7 +25,12 @@ export const ThankYouPage = () => {
         <img 
           src="/images/new-logo.png" 
           alt="TSUS Logo" 
-          style={{ height: '70px', display: 'block', margin: '0 auto 2.5rem auto' }}
+          style={{ 
+            height: '110px', 
+            display: 'block', 
+            margin: '0 auto 2.5rem auto',
+            imageRendering: 'crisp-edges'
+          }}
         />
         
         <h1 style={{ 
