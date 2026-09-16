@@ -157,13 +157,13 @@
   }
 
   .headline {
-    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    font-size: clamp(1.8rem, 7.5vw, 2.2rem) !important;
     text-align: center;
     width: 100%;
   }
 
   .subline {
-    font-size: 0.85rem;
+    font-size: clamp(0.9rem, 4vw, 1.05rem);
     text-align: center;
     width: 100%;
   }
