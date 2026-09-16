@@ -27,12 +27,12 @@ function App() {
       <HeroSection />
       <StatsSection />
       <JourneySection />
-      <GradeAgeSection />
-      <EarlyYearsSection />
       <PreschoolIntentSection />
+      <GradeAgeSection />
       <FeaturesSection />
-      <LocationSection />
       <TestimonialsSection />
+      <EarlyYearsSection />
+      <LocationSection />
       <AdmissionsBlock />
       <FAQSection />
       <FinalConversionSection />
@@ -40,7 +40,7 @@ function App() {
       <div className="mobile-sticky-cta">
         <div className="mobile-sticky-cta-split">
           <a href="tel:+919172098206" className="cta-call">Call Now</a>
-          <a href="#lead-form" className="cta-book">Book a Visit</a>
+          <a href="https://wa.me/919172098206" className="cta-whatsapp-sticky">WhatsApp Now</a>
         </div>
       </div>
       <WhatsAppButton />

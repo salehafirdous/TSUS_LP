@@ -23,9 +23,9 @@ export const ThankYouPage = () => {
       }}>
         {/* Using the TSUS logo */}
         <img 
-          src="/images/TSUS_Logo.png" 
+          src="/images/new-logo.png" 
           alt="TSUS Logo" 
-          style={{ height: '140px', marginBottom: '2.5rem', display: 'block', margin: '0 auto 2.5rem auto' }}
+          style={{ height: '70px', display: 'block', margin: '0 auto 2.5rem auto' }}
         />
         
         <h1 style={{ 

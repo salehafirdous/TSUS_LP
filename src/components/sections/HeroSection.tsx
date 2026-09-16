@@ -4,6 +4,7 @@ import { Input } from '../ui/Input';
 import { Select } from '../ui/Select';
 import styles from './HeroSection.module.css';
 import { submitLead } from '../../utils/submitLead';
+import { GraduationCap, Users, Box, User } from 'lucide-react';
 
 export const HeroSection = () => {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -30,35 +31,49 @@ export const HeroSection = () => {
 
         <div className={styles.content}>
           <div className={styles.pillBadge}>
-            <span className={styles.pillDot}>•</span>
-            Admissions 2027–28 · Nursery to Grade 10
+            <GraduationCap className={styles.pillIcon} size={20} />
+            Nursery & Kindergarten Admissions 2027–28
           </div>
           <h1 className={styles.headline}>
-            Choosing Your <span className="highlight">Child’s First School</span> in Ludhiana? Make It the Only One They’ll Ever Need.
+            A <span className="highlight">Happy First School</span>.<br />
+            A Confident Start<br />
+            for Your Child.
           </h1>
           <p className={styles.subline}>
-            A dedicated Early Years program to begin with. A full Nursery-to-Grade-10 CBSE journey to grow into  on the same campus, with the same school family, from your child’s very first day.
+            Play-based learning, caring teachers and<br />
+            personal attention helping your child feel secure,<br />
+            make friends and grow in confidence.
           </p>
 
-          <div className={styles.chips}>
-            <span className="highlight">Pre-Nursery -to-Grade-10 CBSE</span>
+          <div className={styles.featureCards}>
+            <div className={styles.featureCard}>
+              <div className={styles.iconCircle}><Users size={24} color="var(--color-dark-blue)" /></div>
+              <span className={styles.featureText}>Small<br />Classes</span>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.featureCard}>
+              <div className={styles.iconCircle}><Box size={24} color="var(--color-dark-blue)" /></div>
+              <span className={styles.featureText}>Hands-On<br />Learning</span>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.featureCard}>
+              <div className={styles.iconCircle}><User size={24} color="var(--color-dark-blue)" /></div>
+              <span className={styles.featureText}>Individual<br />Attention</span>
+            </div>
           </div>
-
-          <p className={`${styles.bodyText} ${styles.desktopOnlyText}`}>
-            At The Shri Ram Universal School, Sarabha Nagar, Ludhiana, young children learn through curiosity, play and meaningful experiences in a nurturing Early Years environment  designed as the first chapter of a CBSE education that carries through to Grade 10.
-          </p>
 
           <div className={styles.mobileOnlyImageWrapper}>
             <img src="/images/HeroBG.JPG" alt="Preschool child learning in uniform" className={styles.centerImage} />
           </div>
 
-          <div className={styles.trustLine}>
-            Happy Learning · Personal Attention · Experiential Learning
-          </div>
+          <Button variant="primary" className={`${styles.mobileOnlyBtn} ${styles.mobileBookVisitBtn}`} href="#lead-form">BOOK A CAMPUS VISIT</Button>
 
+          <p className={styles.actionText}>
+            Explore our early-years classrooms and meet our teachers.
+          </p>
           <div className={styles.actions}>
-            <Button variant="primary" href="#lead-form">Book A Campus Visit</Button>
-            <Button variant="outline" className={styles.secondaryBtn} href="tel:+919172098206">Call Admissions</Button>
+            <Button variant="primary" className={styles.desktopOnlyBtn} href="#lead-form">Book A Campus Visit</Button>
+            <Button variant="outline" className={`${styles.secondaryBtn} ${styles.desktopOnlyBtn}`} href="tel:+919172098206">Call Admissions</Button>
           </div>
         </div>
         <div className={styles.centerImageWrapper}>
@@ -78,19 +93,6 @@ export const HeroSection = () => {
                 <Input name="phone" placeholder="+91" label="Mobile Number" type="tel" required />
 
                 <Select
-                  name="childAge"
-                  label="Child's Age"
-                  defaultValue=""
-                  options={[
-                    { value: "2.5-3", label: "2.5–3 Years" },
-                    { value: "3-4", label: "3–4 Years" },
-                    { value: "4-5", label: "4–5 Years" },
-                    { value: "5-6", label: "5–6 Years" }
-                  ]}
-                  required
-                />
-
-                <Select
                   name="grade"
                   label="Grade Seeking Admission"
                   defaultValue=""
@@ -104,8 +106,6 @@ export const HeroSection = () => {
                   ]}
                   required
                 />
-
-                <Input name="area" placeholder="Area / Locality" label="Area / Locality" required />
 
                 <Select
                   name="interaction"

@@ -30,7 +30,7 @@ const grades = [
   {
     title: 'UKG',
     age: '5–6 Years',
-    image: '/images/Reading.JPG',
+    image: '/images/Reading .JPG',
     focus: 'Reading Fluency · Grade 1 Readiness',
     desc: 'A transition year designed to strengthen foundational skills and help children move confidently towards Grade 1  and everything TSUS builds from there through Grade 10.',
     linkText: 'Check UKG'

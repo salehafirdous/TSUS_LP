@@ -8,7 +8,8 @@ const learnings = [
   { title: 'How to Communicate', desc: 'Language, conversation and expression.' },
   { title: 'How to Make Friends', desc: 'Sharing, cooperation and belonging.' },
   { title: 'How to Become Independent', desc: 'Trying little things with confidence.' },
-  { title: 'How to Believe in Themselves', desc: 'Confidence built through everyday experiences.' }
+  { title: 'How to Believe in Themselves', desc: 'Confidence built through everyday experiences.' },
+  { title: 'How to Explore Their World', desc: 'Multi-sensory discovery, self-expression, and curiosity in action.' }
 ];
 
 const framework = [

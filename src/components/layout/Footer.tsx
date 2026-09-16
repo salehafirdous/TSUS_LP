@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className={`container ${styles.container}`}>
         <div className={styles.logoCol}>
           <img
-            src="/images/TSUS_Logo.png"
+            src="/images/new-logo.png"
             alt="TSUS Footer Logo"
             className={styles.logo}
           />

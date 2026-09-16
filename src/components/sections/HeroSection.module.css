@@ -63,6 +63,7 @@
   max-width: 550px;
   position: relative;
   z-index: 2;
+  transform: translateY(-0.5rem);
 }
 
 @media (max-width: 991px) {
@@ -72,6 +73,7 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    transform: none;
   }
 }
 
@@ -79,7 +81,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--color-white);
+  background: #FFF9E6;
   padding: 0.6rem 1.25rem;
   border-radius: 50px;
   font-size: 0.95rem;
@@ -89,15 +91,14 @@
   margin-bottom: 1.5rem;
 }
 
-.pillDot {
-  color: var(--color-gold);
-  font-size: 1.5rem;
-  line-height: 0.5;
+.pillIcon {
+  color: var(--color-dark-blue);
 }
 
 .headline {
   color: var(--color-dark-blue);
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 
@@ -108,39 +109,124 @@
   margin-bottom: 1.5rem;
 }
 
-.chips {
-  margin-bottom: 1.5rem;
-  font-weight: 800;
-  font-size: 1.1rem;
+.featureCards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.featureCard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.iconCircle {
+  width: 48px;
+  height: 48px;
+  background-color: #FFF9E6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featureText {
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--color-dark-blue);
+  line-height: 1.2;
 }
 
-.dot {
-  color: var(--color-gold);
-  font-weight: 900;
-  font-size: 1.5rem;
-  line-height: 1;
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.bodyText {
-  font-size: 1rem;
-  opacity: 1;
-  color: var(--color-text-main);
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
+@media (max-width: 767px) {
+  .headline {
+    font-size: 2rem !important;
+  }
 
-@media (min-width: 992px) {
-  .bodyText {
-    max-width: 440px; /* Forces text to wrap before it hits the image */
+  .subline {
+    font-size: 0.85rem;
+  }
+
+  .featureCards {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .featureCard {
+    gap: 0.25rem;
+  }
+
+  .iconCircle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .iconCircle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .featureText {
+    font-size: 0.75rem;
+  }
+
+  .divider {
+    display: block;
+    height: 30px;
+    align-self: center;
   }
 }
 
-.trustLine {
+@media (max-width: 991px) {
+  .mobileOnlyImageWrapper .centerImage {
+    mask-image: none;
+    -webkit-mask-image: none;
+    border-radius: 20px;
+  }
+}
+
+.actionText {
+  color: var(--color-dark-blue);
   font-weight: 700;
-  color: var(--color-primary-blue);
-  margin-bottom: 2rem;
-  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.mobileOnlyBtn {
+  display: none;
+}
+
+.mobileBookVisitBtn {
+  background-color: var(--color-gold) !important;
+  border-color: var(--color-gold) !important;
+  color: var(--color-dark-blue) !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  border-radius: 12px !important;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 1.5rem auto !important;
+  font-size: 1.1rem !important;
+  padding: 1rem !important;
+}
+
+.mobileBookVisitBtn:hover {
+  background-color: var(--color-gold-dark) !important;
+  border-color: var(--color-gold-dark) !important;
 }
 
 .actions {
@@ -150,10 +236,26 @@
 }
 
 @media (max-width: 767px) {
+  .actionText {
+    font-size: 0.75rem !important;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 0;
+  }
+
   .pillBadge {
     white-space: nowrap;
     font-size: 0.75rem;
     padding: 0.5rem 1rem;
+  }
+
+  .desktopOnlyBtn {
+    display: none !important;
+  }
+
+  .mobileOnlyBtn {
+    display: flex !important;
+    justify-content: center;
   }
 
   .actions {
@@ -213,7 +315,7 @@
     display: block;
     position: absolute;
     bottom: 0;
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
     width: 750px;
     max-width: 50vw;
