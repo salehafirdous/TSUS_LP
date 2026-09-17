@@ -49,6 +49,12 @@
   padding: 0 5%;
 }
 
+@media (max-width: 767px) {
+  .heroContainer {
+    gap: 1rem;
+  }
+}
+
 @media (min-width: 992px) {
   .heroContainer {
     flex-direction: row;
