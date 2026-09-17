@@ -39,7 +39,12 @@ function App() {
       <Footer />
       <div className="mobile-sticky-cta">
         <div className="mobile-sticky-cta-split">
-          <a href="tel:+919172098206" className="cta-call">Call Now</a>
+          <a href="tel:+919172098206" className="cta-call" onClick={(e) => {
+            if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+              e.preventDefault();
+              (window as any).gtag_report_conversion('tel:+919172098206');
+            }
+          }}>Call Now</a>
           <a href="https://wa.me/919172098206" className="cta-whatsapp-sticky">WhatsApp Now</a>
         </div>
       </div>

@@ -16,7 +16,7 @@ export const HeroSection = () => {
     await submitLead(
       formData,
       () => {
-        window.location.href = '/thank-you';
+        window.location.replace('/thank-you');
       },
       () => setStatus('error')
     );
@@ -73,7 +73,12 @@ export const HeroSection = () => {
           </p>
           <div className={styles.actions}>
             <Button variant="primary" className={styles.desktopOnlyBtn} href="#lead-form">Book A Campus Visit</Button>
-            <Button variant="outline" className={`${styles.secondaryBtn} ${styles.desktopOnlyBtn}`} href="tel:+919172098206">Call Admissions</Button>
+            <Button variant="outline" className={`${styles.secondaryBtn} ${styles.desktopOnlyBtn}`} href="tel:+919172098206" onClick={(e) => {
+              if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                e.preventDefault();
+                (window as any).gtag_report_conversion('tel:+919172098206');
+              }
+            }}>Call Admissions</Button>
           </div>
         </div>
         <div className={styles.centerImageWrapper}>

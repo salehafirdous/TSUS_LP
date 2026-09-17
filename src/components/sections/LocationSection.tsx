@@ -16,7 +16,12 @@ export const LocationSection = () => {
             <div>
               <strong>The Shri Ram Universal School</strong><br />
               Block-D, Sarabha Nagar, Ludhiana – 141001<br />
-              <a href="tel:+919172098206" style={{ color: 'var(--color-primary-blue)', fontWeight: 600, textDecoration: 'none', display: 'inline-block', marginTop: '0.25rem' }}>+91 91720 98206</a>
+              <a href="tel:+919172098206" style={{ color: 'var(--color-primary-blue)', fontWeight: 600, textDecoration: 'none', display: 'inline-block', marginTop: '0.25rem' }} onClick={(e) => {
+                if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                  e.preventDefault();
+                  (window as any).gtag_report_conversion('tel:+919172098206');
+                }
+              }}>+91 91720 98206</a>
             </div>
           </div>
           

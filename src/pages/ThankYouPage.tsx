@@ -51,7 +51,7 @@ export const ThankYouPage = () => {
           Your visit has been booked successfully. Our admissions team will contact you shortly to confirm the details.
         </p>
         
-        <Button variant="primary" onClick={() => window.location.href = '/'}>
+        <Button variant="primary" onClick={() => window.location.replace('/')}>
           Back to Home
         </Button>
       </div>
